@@ -4,10 +4,13 @@ import About from './pages/About'
 import SingIn from './pages/SingIn'
 import SingnUp from './pages/SingnUp'
 import Profile from './pages/Profile'
+import Header from './componests/Header'
 
 const App = () => {
   return (
     <BrowserRouter>
+    {/*header */}
+    <Header/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
